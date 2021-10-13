@@ -1,0 +1,622 @@
+@import 'utilities.css';
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:"Raleway-regular";
+}
+
+.container{
+    width:100%;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+
+@media screen and (min-width:768px){
+        .container{
+                max-width:960px;
+        }
+}
+
+@media screen and (min-width:1200px){
+        .container{
+                max-width:1152px;
+        }
+}
+header .container .menu{
+        font-family: 'Titillium Web', sans-serif;
+}
+
+        /* header starts heer */
+header{
+        position:sticky;
+        top:0px;
+       z-index: 11;
+        background-color: white;
+        padding:1rem 0;
+}        
+header .container .logo i{
+        background-color: rgb(108, 108, 211);
+        font-size:20px;
+        padding:10px;
+        border-radius:8px;
+        color:white;
+        margin-right:.7rem;
+}
+header .container .btn-style button{
+        padding:.4rem 1.4rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-size:.8rem;
+        border:2px solid blue;
+        color:rgb(137, 137, 170);
+        border-radius:4px;
+        font-weight:bold;
+        background-color:white;
+        transition:.4s;
+}
+header .container nav ul li{
+        list-style-type:none;
+        position:relative;
+        float:left;
+        margin:0 20px;
+}
+header .container nav .menu{
+        margin-left:-220px;
+}
+
+header .container nav .menu a{
+        text-decoration: none;
+        color:black;
+        font-weight:600;
+}
+header .container nav .menu a::after{
+        content:'';
+        width:0;
+        position:absolute;
+        left:0;
+        bottom:-10px;
+        border-bottom:3px solid green;
+        transition:all .4s ease-in-out; 
+}
+ 
+header .container .menu a:hover{
+        color:teal;     
+}
+header .container .menu a:hover::after{
+        width:100%;
+}
+header .container .btn-style button:hover{
+        background-color:teal;
+        color:white;
+        border:2px solid rgb(14, 13, 13);
+}
+
+        /* header ends here */
+
+        /* hero section starts here */
+section .hero{
+        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,.3)), url("./images/pexels-freestocksorg-744461.jpg");
+        height:70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position:relative;
+
+}
+section .hero .hero-content{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        color:white;
+        text-align:center;
+
+}
+section .hero .hero-content h4{
+        font-family: 'Titillium Web', sans-serif;
+        color:rgb(77, 54, 54);
+        font-size:1.3rem;
+}
+section .hero .hero-content h1{
+        font-size:2.5rem;
+        font-weight:bolder;
+        margin:1.8rem 0;
+}
+section .hero .hero-content button i{
+        margin-right:.5rem;
+        font-size:1.2rem;
+}
+
+section .hero .hero-content .btn{
+        height:60px;
+        width:180px;
+        border:1px solid rgb(18, 119, 153);
+        font-size:1rem;
+        border-radius: 5px;
+        margin-right:1rem;
+        outline:none;
+        color:rgb(161, 120, 120);
+        background-color:white;
+        box-shadow:inset 0 0 0 0 #f9e506; 
+        transition: .3s ease;
+        
+}
+section .hero .hero-content .btn:hover{
+        box-shadow:inset 100px 0 0 0 #5e5c4e; 
+        color:white;
+}
+
+
+        /* hero section ends here */
+
+        /*  iframe starts here*/
+section.frame{
+        padding:4rem 0; 
+        background-color:#E3E5EB;
+}
+
+section.frame .right{
+        margin-left:3rem;
+}
+section.frame .right p{
+        color:rgb(134, 131, 109);
+        line-height:1.8;
+}
+section.frame .right  h1{
+        padding-bottom:1.5rem;
+       
+}
+
+        /*  iframe ends here*/
+        
+
+        /* services stats here */
+section.services{
+        padding:5rem 0;
+        background-color: white
+}
+section.services .services-content{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-gap:1.4rem;
+        margin:0 3rem;
+}
+section.services .services-content .card{
+        background-color:white;
+        padding:2rem;
+        min-height:170px;
+        border-radius: 7px;
+}
+section.services .services-content .card{
+        box-shadow:2px -2px 6px rgba(0, 0, 0,.3)
+}
+section.services .services-content .card i{
+        color:blue;
+        margin-right:1.7rem;
+        font-size:30px;
+}
+section.services .services-content .card p{
+        color:teal;
+        line-height:1.6;
+}
+section.services .services-content .card h3{
+        padding-bottom:1rem;
+}
+section.services .container h1{
+        text-align:center;
+        font-size:3rem;
+        font-weight:900;
+        margin-bottom:.8rem;
+        
+}
+section.services .container h5{
+        text-align:center;
+        font-size:1.1rem;
+        color:teal;
+        margin-bottom:4rem;
+        font-family: 'Titillium Web', sans-serif;
+        letter-spacing: 2px;
+        font-weight:lighter;
+}
+
+
+
+        /* servicses ends here */
+
+        /* gigs starts here */
+section.gigs{
+        padding:6rem 0;
+}
+section.gigs .container h1{
+        text-align:center;
+        font-weight:400;
+}
+section.gigs .container h4{
+        text-align:center;
+        color:teal;
+        font-size:1rem;
+        font-weight:lighter;
+        letter-spacing: 2px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-bottom:4rem;
+}
+section.gigs .container .gig-wrapper{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap:3rem;
+}
+section.gigs .container .gig-wrapper .gig{
+        background-color: #fff;
+        box-shadow:2px 2px 6px rgba(0, 0, 0,.3);
+}
+section.gigs .container .gig-wrapper .gig .head h6{
+        font-size:1.2rem;
+        margin-bottom:.6rem;
+}
+section.gigs .container .gig-wrapper .gig .head p{
+        color:teal;
+        font-size:1rem;
+        line-height:1.6;
+        margin-bottom:.6rem;
+}
+section.gigs .container .gig-wrapper .gig .head .zero{
+        font-size:3.4rem;
+}
+section.gigs .container .gig-wrapper .gig .head .mon{
+        font-weight:900;
+}
+section.gigs .container .gig-wrapper .gig .head .logo{
+        margin:1rem 0;
+}
+section.gigs .container .gig-wrapper .gig .head{
+        position:relative;
+        padding:1.5rem;
+        cursor:pointer;
+}
+section.gigs .container .gig-wrapper .gig .head::after{
+        content:'';
+        position:absolute;
+        border-bottom:2px solid rgb(221, 236, 221);
+        width:100%;
+        bottom:0px;
+        left:0px;
+}
+section.gigs .container .gig-wrapper .gig .head:hover{
+        background-color: #CDD5F6;
+}
+section.gigs .container .gig-wrapper .gig .body{
+        padding:0 1.5rem;
+}
+section.gigs .container .gig-wrapper .gig .body p{
+        margin:1.6rem 0;
+}
+section.gigs .container .gig-wrapper .gig .body p i{
+        color:blue; 
+        font-weight:bolder;
+        margin-right:.6rem;
+}
+section.gigs .container .gig-wrapper .gig .btn button{
+        padding:.9rem 1.2rem;
+        border:none;
+        outline:none;
+        background-color: #fff;
+        color:blue;
+        font-weight:bolder;
+        box-shadow:4px 4px 18px rgba(0,0,0,.2);
+        border-radius:5px;
+}
+section.gigs .container .gig-wrapper .gig .btn{
+        text-align:center;
+        margin:3rem 0 2rem 0;
+}
+section.gigs .container .gig-wrapper .gig .btn button:hover{
+        background-color:lightblue;
+        cursor:pointer;
+}
+
+
+                 /* gigs endss here */
+
+                 /* team starts here */
+section.team{
+        padding:4rem 0;
+}
+section.team .container h1{
+        margin-bottom:4rem;
+}
+section.team .container .team-wrapper .team-card{
+        width:250px;
+}
+section.team .container .team-wrapper .team-card img{
+        width:100%;
+        height:200px;
+        display:block;
+}
+section.team .container .team-wrapper{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        column-gap:1.5rem;
+}
+section.team .container .team-wrapper .team-card .team-body h5{
+        color:black;
+        font-weight:bolder;
+        margin:0;
+        text-align:left;
+        margin-top:1rem;
+}
+section.team .container .team-wrapper .team-card .team-body p{
+        color:teal;
+        margin-top:.5rem;
+}
+section.team .container .team-wrapper .team-card .team-body{
+        background-color: #fff;
+        box-shadow:4px 2px 18px rgba(0,0,0,.2);
+        padding:1rem;
+}
+
+
+                 /* team ends here */
+section.subscribe{
+        padding:4rem 0;
+        background-color:#F7F9FF;
+}
+section.subscribe .container h1{
+        font-weight:lighter;
+        margin-bottom:2rem;
+}
+section.subscribe .container h5{
+        margin-bottom:2rem;
+}
+section.subscribe .container .sub{
+        text-align:center;
+}
+section.subscribe .container .sub input{
+        width:240px;
+        height:45px;
+        padding:0 1rem;
+        border:none;
+        border-radius:4px;
+        box-shadow:2px 2px 12px rgba(0,0,0,.2);
+        margin-right:.8rem;
+        outline:none;
+        cursor:pointer;
+        transition:.4s;
+}
+section.subscribe .container .sub button{
+        width:180px;
+        height:45px;
+        border:none;
+        border-radius:4px;
+        outline:none;
+        background-color: rgb(109, 109, 221);
+        color:white;
+        font-size:1rem;
+        cursor:pointer;   
+}
+section.subscribe .container .sub input:hover{
+        box-shadow:4px 4px 16px 2px rgba(0,0,0,.3);
+}
+section.subscribe .container .sub button:hover{
+        background-color:gray;
+}
+
+                 /* subscribe ends here */
+
+
+                 /* blog starts here */
+section.blog{
+        padding:5rem 0;
+}
+
+section.blog .container .blog-wrapper img{
+        width:200px;
+        height:auto;
+}
+section.blog .container .blog-wrapper .blog-content{
+        margin-top:3rem;
+}
+section.blog .container .blog-wrapper .right-blog p{
+        color:teal;
+}
+section.blog .container .blog-wrapper h2{
+        font-size:1.8rem;
+}
+section.blog .container .blog-wrapper .blog-body{
+        padding-top:1.3rem;
+        padding-left:1.1rem;
+        width:260px;
+        background-color: #fff;
+        box-shadow:2px 2px 12px rgba(0,0,0,.1);
+        position:relative;
+}
+section.blog .container .blog-wrapper .blog-body h3{
+        color:black;
+        margin-bottom:.6rem;
+}
+section.blog .container .blog-wrapper .blog-body p{
+        color:teal;
+        font-weight:lighter;
+        font-size:.9rem;
+        letter-spacing: 1px;
+        line-height: 1.5;
+}
+section.blog .container .blog-wrapper .blog-body::after{
+        content:"\f061";
+        position:absolute;
+        font-family:"Font Awesome 5 Free";
+        color:rgb(187, 143, 143);
+        font-weight:600;
+        font-size:0;
+        right:-25px;
+        bottom:40px;
+        opacity:0;
+        transition:all .4s;
+}
+section.blog .container .blog-wrapper .blog-body:hover::after{
+        font-size:30px;
+        opacity:1;
+}
+section.blog .container .blog-wrapper .blog-body:hover{
+        box-shadow:3px 3px 18px rgba(0,0,0,.2);
+}
+
+
+                 /* blog ends here */
+
+                /* feedback starts here */
+
+section.feedback{
+        padding:5rem 0;
+        background-color:#F7F9FF;
+}
+section.feedback .container h3{
+        color:teal;
+        text-align:center;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight:lighter;
+        font-size:1.4rem;
+        margin-bottom:.5rem;
+}
+section.feedback .container h1{
+        margin-bottom:4rem;
+        font-weight:lighter;
+}
+section.feedback .container .feedback-wrapper{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 4rem;
+}
+section.feedback .container .feedback-wrapper .feed-card .feed-title{
+        background-color:white;
+        box-shadow: 2px 2px 16px rgba(0,0,0,.1);
+        padding:3rem 2rem;
+        text-align:center;
+        border-radius: 5px;
+        clip-path:polygon(0 0,100% 0,100% 93%,55% 93%,50% 100%,49% 93%,0 93%);
+        
+        background-image:url("./images/227-2271392_quote-marks-png-white.png");
+        background-repeat: no-repeat;
+        background-position: 25px 15px;
+        transition:.4s;
+
+}
+section.feedback .container .feedback-wrapper .feed-card .feed-title:hover{
+        transform: scale(1.1);
+}
+section.feedback .container .feedback-wrapper .feed-card .filter:hover{
+        filter:drop-shadow(6px 6px rgba(0,0,0,.3));
+}
+       
+
+
+section.feedback .container .feedback-wrapper .feed-card .filter{
+        filter:drop-shadow(2px 2px 8px rgba(0,0,0,.1));
+}
+
+section.feedback .container .feedback-wrapper .feed-body img{
+        width:80px;
+        border-radius:50%;
+}
+section.feedback .container .feedback-wrapper .feed-body{
+        margin-top:1rem;
+}
+section.feedback .container .feedback-wrapper .feed-body img{
+        margin-right:1rem;
+}
+section.feedback .container .feedback-wrapper .feed-body span{
+        color:teal;
+}
+section.feedback .container .feedback-wrapper .feed-body .scale{
+        overflow:hidden;
+        padding:.7rem;
+}
+section.feedback .container .feedback-wrapper .feed-body .scale img{
+        transition:.4s;
+}
+section.feedback .container .feedback-wrapper .feed-body .scale img:hover{
+        transform:scale(1.2);
+}
+
+
+                 /* feedback ends here */
+
+                 /* contact starts here */
+section.contact{
+        padding:4rem 0;
+}
+section.contact .container .contact-wrapper .map{
+        margin-right:3rem;
+        filter:grayscale(100%);
+}
+section.contact .container .contact-wrapper .contact-info h3{
+        font-size:1.8rem;
+        font-weight: bolder;
+        margin-bottom:1rem;
+}
+section.contact .container .contact-wrapper .contact-info p{
+        color:teal;
+        line-height:1.7;
+        letter-spacing:.1rem;
+        margin-bottom:2rem;
+}
+section.contact .container .contact-wrapper .contact-info .form input,textarea{
+        font-size:1rem;
+        border:1px solid transparent;
+        padding:1rem;
+        box-shadow:2px 2px 12px rgba(0,0,0,.1);
+        margin-right:.3rem;
+        outline:none;
+        border-radius:5px;
+        transition:.4s;
+}
+section.contact .container .contact-wrapper .contact-info .form input:hover{
+        box-shadow:6px 6px  rgba(0,0,0,.2);
+        border:1px solid blue;
+}
+section.contact .container .contact-wrapper .contact-info .form textarea:Hover{
+        box-shadow:6px 6px  rgba(0,0,0,.3);
+        border:1px solid blue;
+}
+
+section.contact .container .contact-wrapper .contact-info .email{
+        width:98%;
+        margin:1.3rem 0;
+}
+section.contact .container .contact-wrapper .contact-info textarea{
+        resize:none;
+}
+section.contact .container .contact-wrapper .contact-info button{
+        padding:.8rem 1.8rem;
+        font-size:1rem;
+        margin-top:1rem;
+        background-color: rgb(81, 81, 211);
+        color:white;
+        border:none;
+        outline:none;
+        border-radius:4px;
+        transition:all .4s;
+        cursor:pointer;
+}
+section.contact .container .contact-wrapper .contact-info button:hover{
+        transform: scale(1.1);
+        background-color: rgb(34, 34, 233);
+}
+
+
+                 /* contact ends here */
+
+                 /* footer starts here */
+footer .foot{
+        text-align:center;
+        font-weight:bolder;
+}
+
+
+                 /* footer ends here */
